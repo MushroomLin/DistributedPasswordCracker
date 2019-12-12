@@ -1,0 +1,90 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="Master" component_manager_id="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24868" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-37.instageni.cs.princeton.edu" port="22" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-37.instageni.cs.princeton.edu" port="22" username="liweixi"/>
+      <login authentication="ssh-keys" hostname="pcvm2-37.instageni.cs.princeton.edu" port="22" username="matta"/>
+      <emulab:console server="pcvm2-37.instageni.cs.princeton.edu"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24874" mac_address="027c9acf44fd">
+      <ip address="10.10.1.1" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24877" mac_address="025370cf2159">
+      <ip address="10.10.2.1" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface client_id="interface-4" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24880" mac_address="029d480136aa">
+      <ip address="10.10.3.1" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm2-37" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="Master.PAssWoRdCrAcker.ch-geni-net.instageni.cs.princeton.edu" ipv4="128.112.170.32"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="Worker1" component_manager_id="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24869" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-38.instageni.cs.princeton.edu" port="22" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-38.instageni.cs.princeton.edu" port="22" username="liweixi"/>
+      <login authentication="ssh-keys" hostname="pcvm2-38.instageni.cs.princeton.edu" port="22" username="matta"/>
+      <emulab:console server="pcvm2-38.instageni.cs.princeton.edu"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24875" mac_address="02e8444d8668">
+      <ip address="10.10.1.2" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm2-38" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="Worker1.PAssWoRdCrAcker.ch-geni-net.instageni.cs.princeton.edu" ipv4="128.112.170.33"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="Worker2" component_manager_id="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24870" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-39.instageni.cs.princeton.edu" port="22" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-39.instageni.cs.princeton.edu" port="22" username="liweixi"/>
+      <login authentication="ssh-keys" hostname="pcvm2-39.instageni.cs.princeton.edu" port="22" username="matta"/>
+      <emulab:console server="pcvm2-39.instageni.cs.princeton.edu"/>
+    </services>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24878" mac_address="0238986de5c3">
+      <ip address="10.10.2.2" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm2-39" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="Worker2.PAssWoRdCrAcker.ch-geni-net.instageni.cs.princeton.edu" ipv4="128.112.170.35"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="Worker3" component_manager_id="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24871" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-42.instageni.cs.princeton.edu" port="22" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-42.instageni.cs.princeton.edu" port="22" username="liweixi"/>
+      <login authentication="ssh-keys" hostname="pcvm2-42.instageni.cs.princeton.edu" port="22" username="matta"/>
+      <emulab:console server="pcvm2-42.instageni.cs.princeton.edu"/>
+    </services>
+    <interface client_id="interface-5" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24881" mac_address="02cd2026a305">
+      <ip address="10.10.3.2" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <emulab:vnode name="pcvm2-42" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="Worker3.PAssWoRdCrAcker.ch-geni-net.instageni.cs.princeton.edu" ipv4="128.112.170.37"/>
+  </node>
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24873">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24874"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24875"/>
+    <component_manager name="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm"/>
+  </link>
+  <link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24876">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24877"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24878"/>
+    <component_manager name="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm"/>
+  </link>
+  <link client_id="link-2" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24879">
+    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24880"/>
+    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+instageni.cs.princeton.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.cs.princeton.edu+sliver+24881"/>
+    <component_manager name="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm"/>
+  </link>
+  <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="" latitude="40.34402" longitude="-74.65160"/>
+  </rs:site_info>
+</rspec>
