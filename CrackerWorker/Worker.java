@@ -6,7 +6,7 @@ import java.net.SocketException;
 
 class Worker {
     private final static int PORT = 8123;
-    private final static String HOST = "127.0.0.1";
+    private final static String HOST = "128.112.170.32";
     public static void main(String[] arg) {
         try {
             Cracker cracker = new Cracker();
